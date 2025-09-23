@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 NextForge
 
-## Getting Started
+Le guide complet pour créer des applications Next.js modernes et production-ready
 
-First, run the development server:
+📖 À propos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+NextForge est une documentation complète qui vous guide pas à pas dans la création d'applications Next.js. De l'installation initiale au déploiement en production, apprenez les meilleures pratiques avec la stack technique la plus moderne.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🛠️ Stack Technique
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Framework: Next.js 15 (App Router)
+Authentification: Better Auth
+UI/Design: shadcn/ui + Tailwind CSS
+Base de données: Prisma + PostgreSQL ou MySQL
+Déploiement: Vercel
+Langage: TypeScript
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📋 Ce que vous apprendrez :
+🏗️ Fondations
 
-## Learn More
+Configuration projet Next.js optimale
+Setup TypeScript et outils de développement
+Structure de dossiers scalable
 
-To learn more about Next.js, take a look at the following resources:
+🔐 Authentification
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Intégration Better Auth complète
+Providers sociaux (Google, GitHub)
+Gestion des sessions et sécurité
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🎨 Design System
 
-## Deploy on Vercel
+shadcn/ui configuration avancée
+Composants réutilisables
+Dark/Light mode et responsive design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🗄️ Base de Données
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Modélisation avec Prisma
+API Routes sécurisées
+Gestion des données optimale
+
+🚀 Production
+
+Bonnes pratiques de sécurité
+Tests automatisés
+Déploiement et monitoring
+
+🎯 Pour qui ?
+
+Développeurs intermédiaires en React/Next.js
+Freelances cherchant une base solide
+Équipes voulant standardiser leur stack
+Entrepreneurs lançant leur SaaS
+
+Suivez la documentation
+
+Commencez par Setup Initial
+Progressez section par section
+Testez chaque étape
+
+
+Créez votre projet
+
+bash   npx create-next-app@latest mon-projet --typescript
+
+📚 Table des Matières
+Section             Description                             Status  
+Setup               InitialInstallation et configuration    🚧
+Better Auth         Authentification complète               🚧
+shadcn/ui           Design system moderne                   🚧
+Base de Données     Prisma et PostgreSQL                    🚧
+API Routes          Backend et server actions               🚧
+Déploiement         Production et monitoring                🚧
+
+🤝 Contribution
+Les contributions sont les bienvenues !
+
+🐛 Reportez les bugs via les Issues
+✨ Proposez des améliorations
+📖 Améliorez la documentation
+
+📄 Licence
+MIT © Ezanka
+
+<div align="center">
+  <p>Fait avec ❤️ pour la communauté des développeurs</p>
+</div>
