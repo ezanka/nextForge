@@ -1,4 +1,4 @@
-export default function DocsPage() {
+export default function GSSOPage() {
     return (
         <>
             <h1 className="text-3xl font-bold mb-6">Vue d&apos;ensemble du stack</h1>
