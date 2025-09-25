@@ -55,9 +55,9 @@ const sidebarItems = [
         title: "Getting Started",
         icon: Rocket,
         items: [
-            { title: "Introduction", url: "/introduction" },
-            { title: "Prérequis", url: "/prerequisites" },
-            { title: "Vue d'ensemble du stack", url: "/stack-overview" },
+            { title: "Introduction", url: "/docs/getting-started/introduction" },
+            { title: "Prérequis", url: "/docs/getting-started/prerequis" },
+            { title: "Vue d'ensemble du stack", url: "/docs/getting-started/stack-overview" },
         ],
     },
     {
