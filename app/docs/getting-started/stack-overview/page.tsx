@@ -1,7 +1,7 @@
 export default function DocsPage() {
     return (
         <>
-            <h1 className="text-3xl font-bold mb-6">Vue d'ensemble du stack</h1>
+            <h1 className="text-3xl font-bold mb-6">Vue d&apos;ensemble du stack</h1>
             <h2 className="text-xl font-semibold mb-6">Architecture générale</h2>
             <p className="mb-6">
                 Notre stack moderne se compose de plusieurs couches qui travaillent en harmonie :
@@ -189,7 +189,7 @@ export default function DocsPage() {
 
             <h2 className="text-xl font-semibold mb-4">Prochaines étapes</h2>
             <p className="mb-6">
-                Maintenant que vous comprenez l'architecture générale, nous allons plonger dans chaque technologie :
+                Maintenant que vous comprenez l&apos;architecture générale, nous allons plonger dans chaque technologie :
             </p>
             <ul className="list-disc list-inside mb-6">
                 <li>Next.js : Configuration et concepts fondamentaux</li>
@@ -198,7 +198,7 @@ export default function DocsPage() {
                 <li>Prisma : Modélisation et accès aux données</li>
             </ul>
             <p className="mb-6">
-                Chaque section inclut des exemples pratiques et des cas d'usage réels pour vous permettre de maîtriser rapidement ces technologies.
+                Chaque section inclut des exemples pratiques et des cas d&apos;usage réels pour vous permettre de maîtriser rapidement ces technologies.
             </p>
         </>
     );

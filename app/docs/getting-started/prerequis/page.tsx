@@ -66,7 +66,7 @@ export default function GSPPage() {
                 <li>Chrome DevTools pour le debugging</li>
                 <li>React Developer Tools (extension Chrome/Firefox)</li>
             </ul>
-            <h2 className="text-xl font-semibold mb-4">Vérification de l'environnement</h2>
+            <h2 className="text-xl font-semibold mb-4">Vérification de l&apos;environnement</h2>
             <p className="mb-6">Créez un projet Next.js simple pour vérifier que tout fonctionne :</p>
             <code className="bg-card p-4 rounded mb-6 block">
                 <pre className="data-rehype-pretty-code-pre">

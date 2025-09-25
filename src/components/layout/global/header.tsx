@@ -1,6 +1,6 @@
 
 import { ThemeToggle } from "@/src/components/ui/theme-toggle"
-import { Anvil, Github } from "lucide-react";
+import { Anvil } from "lucide-react";
 import Link from "next/link"
 
 export default function Header() {

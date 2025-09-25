@@ -14,7 +14,6 @@ import {
     Code,
     Layout,
     Server,
-    Image,
     Route,
     Component,
     MousePointer,
@@ -26,7 +25,6 @@ import {
     Gauge,
     CheckCircle,
     Cloud,
-    Terminal,
     Bug,
     ChevronRight,
 } from "lucide-react";
