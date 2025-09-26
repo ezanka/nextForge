@@ -1,3 +1,5 @@
+"use client";
+
 import {
     Rocket,
     Zap,
@@ -47,6 +49,8 @@ import {
     CollapsibleContent,
     CollapsibleTrigger,
 } from "@/src/components/ui/shadcn/collapsible";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const sidebarItems = [
     {
@@ -659,6 +663,10 @@ const sidebarItems = [
 ];
 
 export default function SidebarComponent() {
+    const pathname = usePathname();
+
+    console.log("Current pathname:", pathname);
+
     return (
         <Sidebar className="h-[calc(100vh-4rem)] top-16 sticky hidden md:block md:w-[268px] lg:w-[286px] border-r border-border bg-background/50">
             <SidebarContent className="bg-background">
@@ -695,9 +703,12 @@ export default function SidebarComponent() {
                                                             {item.items.map((subItem) => (
                                                                 <SidebarMenuSubItem key={subItem.title}>
                                                                     <SidebarMenuSubButton asChild>
-                                                                        <a href={subItem.url}>
+                                                                        <Link
+                                                                            href={subItem.url}
+                                                                            className={pathname === subItem.url ? 'bg-accent text-accent-foreground' : ''}
+                                                                        >
                                                                             <span>{subItem.title}</span>
-                                                                        </a>
+                                                                        </Link>
                                                                     </SidebarMenuSubButton>
                                                                 </SidebarMenuSubItem>
                                                             ))}
@@ -706,14 +717,14 @@ export default function SidebarComponent() {
                                                 </SidebarMenuItem>
                                             </Collapsible>
                                         ) : (
-                                            <SidebarMenuItem key={item.title}>
+                                            <SidebarMenuItem key={item.title} className="mb-1">
                                                 <SidebarMenuButton asChild>
-                                                    <a
+                                                    <Link
                                                         href={item.url}
-                                                        className="flex items-center gap-2"
+                                                        className={`${pathname === item.url ? 'bg-accent text-accent-foreground' : ''}`}
                                                     >
                                                         <span>{item.title}</span>
-                                                    </a>
+                                                    </Link>
                                                 </SidebarMenuButton>
                                             </SidebarMenuItem>
                                         )
