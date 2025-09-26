@@ -24,8 +24,8 @@ export default function GSPPage() {
             </ul>
             <h2 className="text-xl font-semibold mb-4">Environnement de développement</h2>
             <h3 className="text-lg font-semibold mb-4">Node.js :</h3>
-            <code className="bg-card p-4 rounded border mb-6 block ">
-                <pre className="data-rehype-pretty-code-pre">
+            <code className="bg-card p-4 rounded border mb-6 block overflow-x-auto">
+                <pre className="data-rehype-pretty-code-pre whitespace-pre-wrap break-words">
                     <p><span className="text-ring"># Version recommandée : 18.x ou 20.x</span></p>
                     <p>node --version <span className="text-ring"># v18.17.0 ou plus récent</span></p>
                     <p>npm --version  <span className="text-ring"># 9.x ou plus récent</span></p>
@@ -33,8 +33,8 @@ export default function GSPPage() {
             </code>
             <h3 className="text-lg font-semibold mb-4">Gestionnaire de paquets :</h3>
             <p className="mb-6">Nous recommandons pnpm pour ses performances et sa gestion des dépendances :</p>
-            <code className="bg-card p-4 rounded border mb-6 block">
-                <pre className="data-rehype-pretty-code-pre">
+            <code className="bg-card p-4 rounded border mb-6 block overflow-x-auto">
+                <pre className="data-rehype-pretty-code-pre whitespace-pre-wrap break-words">
                     <p>npm install -g pnpm</p>
                 </pre>
             </code>
