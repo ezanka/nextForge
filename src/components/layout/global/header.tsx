@@ -1,7 +1,14 @@
 
 import { ThemeToggle } from "@/src/components/ui/theme-toggle"
-import { Anvil } from "lucide-react";
+import { Anvil, Menu } from "lucide-react";
 import Link from "next/link"
+
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "@/src/components/ui/shadcn/dropdown-menu"
 
 export default function Header() {
     return (
@@ -45,6 +52,34 @@ export default function Header() {
                         <ThemeToggle />
                     </li>
                 </ul>
+                <div className="md:hidden flex mr-2.5">
+                    <ThemeToggle />
+                    <DropdownMenu>
+                        <DropdownMenuTrigger><Menu /></DropdownMenuTrigger>
+                        <DropdownMenuContent>
+                            <DropdownMenuItem>
+                                <Link href="/">
+                                    Home
+                                </Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                <Link href="/docs">
+                                    Docs
+                                </Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                <Link href="/template">
+                                    Template
+                                </Link>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                <Link href="/changelog">
+                                    Changelog
+                                </Link>
+                            </DropdownMenuItem>
+                        </DropdownMenuContent>
+                    </DropdownMenu>
+                </div>
             </div>
         </header>
     );
