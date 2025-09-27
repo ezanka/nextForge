@@ -1,29 +1,46 @@
+import DocsTitle from "@/src/components/ui/docs/global/title";
+import DocsSubtitle from "@/src/components/ui/docs/global/subtitle";
+import DocsCaption from "@/src/components/ui/docs/global/caption";
+import DocsParagraph from "@/src/components/ui/docs/global/paragraph";
+import DocsList from "@/src/components/ui/docs/global/list";
+import DocsMb4 from "@/src/components/ui/docs/global/mb-4";
+import DocsMb6 from "@/src/components/ui/docs/global/mb-6";
+import DocsMb12 from "@/src/components/ui/docs/global/mb-12";
 
 export default function GSPPage() {
     return (
         <>
-            <h1 className="text-3xl font-bold mb-4">Prérequis</h1>
-            <h2 className="text-xl font-semibold mb-6">Connaissances techniques requises</h2>
-            <h3 className="text-lg font-semibold mb-4">JavaScript/TypeScript :</h3>
+            <DocsTitle title="Prérequis" />
+            <DocsSubtitle subtitle="Connaissances techniques requises" />
+            <DocsMb6 />
+            <DocsCaption caption="JavaScript/TypeScript :" /> 
+            <DocsMb4 />
             <ul className="list-disc list-inside mb-6">
                 <li>Syntaxe ES6+ (async/await, destructuring, modules)</li>
                 <li>Concepts de base de TypeScript (types, interfaces)</li>
                 <li>Promesses et gestion asynchrone</li>
             </ul>
-            <h3 className="text-lg font-semibold mb-4">React :</h3>
-            <ul className="list-disc list-inside mb-6">
-                <li>Composants fonctionnels et hooks (useState, useEffect)</li>
-                <li>Props et state management</li>
-                <li>Event handling et lifecycle</li>
-            </ul>
-            <h3 className="text-lg font-semibold mb-4">Web Development :</h3>
-            <ul className="list-disc list-inside mb-12">
-                <li>HTML5 et CSS3</li>
-                <li>Concepts REST API</li>
-                <li>Notions de base en sécurité web</li>
-            </ul>
-            <h2 className="text-xl font-semibold mb-4">Environnement de développement</h2>
-            <h3 className="text-lg font-semibold mb-4">Node.js :</h3>
+            <DocsMb6 />
+            <DocsCaption caption="React :" />
+            <DocsMb4 />
+            <DocsList itemList={[
+                "Composants fonctionnels et hooks (useState, useEffect)",
+                "Props et state management",
+                "Event handling et lifecycle"
+            ]} />
+            <DocsMb6 />
+            <DocsCaption caption="Web Development :" />
+            <DocsMb4 />
+            <DocsList itemList={[
+                "HTML5 et CSS3",
+                "Concepts REST API",
+                "Notions de base en sécurité web"
+            ]} />
+            <DocsMb12 />
+            <DocsSubtitle subtitle="Environnement de développement" />
+            <DocsMb4 />
+            <DocsCaption caption="Node.js :" />
+            <DocsMb4 />
             <code className="bg-card p-4 rounded border mb-6 block overflow-x-auto">
                 <pre className="data-rehype-pretty-code-pre whitespace-pre-wrap break-words">
                     <p><span className="text-ring"># Version recommandée : 18.x ou 20.x</span></p>
@@ -31,15 +48,21 @@ export default function GSPPage() {
                     <p>npm --version  <span className="text-ring"># 9.x ou plus récent</span></p>
                 </pre>
             </code>
-            <h3 className="text-lg font-semibold mb-4">Gestionnaire de paquets :</h3>
-            <p className="mb-6">Nous recommandons pnpm pour ses performances et sa gestion des dépendances :</p>
+            <DocsMb6 />
+            <DocsCaption caption="Gestionnaire de paquets :" />
+            <DocsMb4 />
+            <DocsParagraph paragraph="Nous recommandons pnpm pour ses performances et sa gestion des dépendances :" />
+            <DocsMb6 />
             <code className="bg-card p-4 rounded border mb-6 block overflow-x-auto">
                 <pre className="data-rehype-pretty-code-pre whitespace-pre-wrap break-words">
                     <p>npm install -g pnpm</p>
                 </pre>
             </code>
-            <p className="mb-8">Alternatives acceptées : <span className="text-chart-5/60 bg-card p-1 rounded-xs border">npm</span> ou <span className="text-chart-5/60 bg-card p-1 rounded-xs border">yarn</span></p>
-            <h3 className="text-lg font-semibold mb-4">Éditeur de code :</h3>
+            <DocsMb6 />
+            <p>Alternatives acceptées : <span className="text-chart-5/60 bg-card p-1 rounded-xs border">npm</span> ou <span className="text-chart-5/60 bg-card p-1 rounded-xs border">yarn</span></p>
+            <DocsMb6 />
+            <DocsCaption caption="Éditeur de code :" />
+            <DocsMb4 />
             <ul className="list-disc list-inside mb-8">
                 <li>Visual Studio Code (recommandé) avec les extensions:</li>
                 <ul className="list-disc list-inside ml-5 mt-2">
@@ -49,25 +72,35 @@ export default function GSPPage() {
                     <li>ESLint</li>
                 </ul>
             </ul>
+            <DocsMb6 />
             <h3 className="text-lg font-semibold mb-4">Éditeur de code :</h3>
-            <ul className="list-disc list-inside mb-8">
-                <li>Installation de Git</li>
-                <li>Compte GitHub/GitLab pour le versioning</li>
-            </ul>
-            <h2 className="text-xl font-semibold mb-4">Outils optionnels mais recommandés</h2>
-            <h3 className="text-lg font-semibold mb-4">Base de données locale :</h3>
-            <ul className="list-disc list-inside mb-6">
-                <li>Docker pour PostgreSQL/MySQL local</li>
-                <li>Ou SQLite pour un démarrage plus simple</li>
-            </ul>
-            <h3 className="text-lg font-semibold mb-4">Outils de développement :</h3>
-            <ul className="list-disc list-inside mb-12">
-                <li>Postman ou Insomnia pour tester les API</li>
-                <li>Chrome DevTools pour le debugging</li>
-                <li>React Developer Tools (extension Chrome/Firefox)</li>
-            </ul>
-            <h2 className="text-xl font-semibold mb-4">Vérification de l&apos;environnement</h2>
-            <p className="mb-6">Créez un projet Next.js simple pour vérifier que tout fonctionne :</p>
+            <DocsCaption caption="Éditeur de code :" />
+            <DocsMb4 />
+            <DocsList itemList={[
+                "Installation de Git",
+                "Compte GitHub/GitLab pour le versioning"
+            ]} />
+            <DocsMb6 />
+            <DocsSubtitle subtitle="Outils optionnels mais recommandés" />
+            <DocsMb4 />
+            <DocsCaption caption="Base de données locale :" />
+            <DocsMb4 />
+            <DocsList itemList={[
+                "PostgreSQL ou MySQL pour les bases de données relationnelles",
+                "SQLite pour une configuration plus simple"
+            ]} />
+            <DocsMb6 />
+            <DocsCaption caption="Outils de développement :" />
+            <DocsMb4 />
+            <DocsList itemList={[
+                "Postman ou Insomnia pour tester les API",
+                "Chrome DevTools pour le debugging"
+            ]} />
+            <DocsMb12 />
+            <DocsSubtitle subtitle="Vérification de l&apos;installation" />
+            <DocsMb4 />
+            <DocsParagraph paragraph="Créez un projet Next.js simple pour vérifier que tout fonctionne :" />
+            <DocsMb6 />
             <code className="bg-card p-4 rounded border mb-6 block overflow-x-auto">
                 <pre className="data-rehype-pretty-code-pre whitespace-pre-wrap break-words">
                     <p>npx create-next-app@latest test-setup --typescript --tailwind --eslint --app</p>
@@ -75,16 +108,22 @@ export default function GSPPage() {
                     <p>npm run dev</p>
                 </pre>
             </code>
-            <p className="mb-6">Si vous voyez la page Next.js par défaut sur <span className="text-chart-5/60 bg-card p-1 rounded-xs border">http://localhost:3000</span>, votre environnement est prêt !</p>
-            <h2 className="text-xl font-semibold mb-4">Ressources complémentaires</h2>
-            <h3 className="text-lg font-semibold mb-4">Documentation officielle :</h3>
+            <DocsMb6 />
+            <p>Si vous voyez la page Next.js par défaut sur <span className="text-chart-5/60 bg-card p-1 rounded-xs border">http://localhost:3000</span>, votre environnement est prêt !</p>
+            <DocsMb6 />
+            <DocsSubtitle subtitle="Ressources supplémentaires" />
+            <DocsMb4 />
+            <DocsCaption caption="Documentation officielle :" />
+            <DocsMb4 />
             <ul className="list-disc list-inside mb-6">
                 <li><a href="https://nextjs.org/docs" className="text-ring underline">Next.js Docs</a></li>
                 <li><a href="https://reactjs.org/docs/getting-started.html" className="text-ring underline">React Docs</a></li>
                 <li><a href="https://www.typescriptlang.org/docs/" className="text-ring underline">TypeScript Docs</a></li>
                 <li><a href="https://tailwindcss.com/docs" className="text-ring underline">Tailwind CSS Docs</a></li>
             </ul>
-            <h3 className="text-lg font-semibold mb-4">Communautés :</h3>
+            <DocsMb6 />
+            <DocsCaption caption="Communautés :" />
+            <DocsMb4 />
             <ul className="list-disc list-inside mb-6">
                 <li><a href="https://discord.com/invite/nextjs" className="text-ring underline">Next.js Discord</a></li>
                 <li><a href="https://www.reddit.com/r/nextjs/" className="text-ring underline">Reddit r/nextjs</a></li>

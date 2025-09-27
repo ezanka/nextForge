@@ -16,7 +16,7 @@ export default function DocsLayout({
                     <SidebarTrigger />
                 </div>
             </div>
-            <div className="w-full flex flex-col py-12 flex-4 max-w-256 ">
+            <div className="w-full flex flex-col py-12 flex-16 sm:flex-4 max-w-256 ">
                 {children}
                 <NextPageComponents showPrevious={true} />
             </div>

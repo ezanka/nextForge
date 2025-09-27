@@ -1,43 +1,70 @@
+import DocsTitle from "@/src/components/ui/docs/global/title";
+import DocsSubtitle from "@/src/components/ui/docs/global/subtitle";
+import DocsCaption from "@/src/components/ui/docs/global/caption";
+import DocsParagraph from "@/src/components/ui/docs/global/paragraph";
+import DocsList from "@/src/components/ui/docs/global/list";
+import DocsListNumber from "@/src/components/ui/docs/global/list-number";
+import DocsMb4 from "@/src/components/ui/docs/global/mb-4";
+import DocsMb6 from "@/src/components/ui/docs/global/mb-6";
+import DocsMb12 from "@/src/components/ui/docs/global/mb-12";
+
 
 export default function GSIPage() {
     return (
         <>
-            <h1 className="text-3xl font-bold mb-4">Introduction</h1>
-            <h2 className="text-xl font-semibold mb-6">Bienvenue dans votre guide complet Next.js</h2>
-            <p className="mb-12">Cette documentation vous accompagnera dans la création d&apos;applications Next.js modernes en suivant les meilleures pratiques actuelles. Vous apprendrez à construire des applications performantes, sécurisées et maintenables.</p>
-            <h2 className="text-xl font-semibold mb-4">Pourquoi ce guide ?</h2>
-            <p className="mb-6">Le développement web moderne évolue rapidement. Entre les nouvelles fonctionnalités de Next.js 14/15, l&apos;évolution de React, et l&apos;émergence d&apos;outils comme Better Auth et shadcn/ui, il peut être difficile de s&apos;y retrouver.</p>
-            <p className="mb-6">Ce guide vous propose :</p>
-            <ul className="list-disc list-inside mb-12">
-                <li>Un parcours structuré du setup initial au déploiement</li>
-                <li>Les meilleures pratiques validées par la communauté</li>
-                <li>Des exemples concrets et des cas d&apos;usage réels</li>
-                <li>Une stack moderne et éprouvée</li>
-            </ul>
-            <h2 className="text-xl font-semibold mb-6">À qui s&apos;adresse cette documentation ?</h2>
-            <h3 className="text-lg font-semibold mb-4">Développeurs débutants en Next.js :</h3>
-            <ul className="list-disc list-inside mb-6">
-                <li>Vous connaissez React mais découvrez Next.js</li>
-                <li>Vous voulez apprendre les bonnes pratiques dès le début</li>
-                <li>Vous cherchez une approche structurée</li>
-            </ul>
-            <h3 className="text-lg font-semibold mb-4">Développeurs intermédiaires :</h3>
-            <ul className="list-disc list-inside mb-12">
-                <li>Vous utilisez déjà Next.js mais voulez moderniser votre stack</li>
-                <li>Vous souhaitez découvrir Better Auth, shadcn/ui ou d&apos;autres outils récents</li>
-                <li>Vous cherchez à optimiser vos applications existantes</li>
-            </ul>
-            <h2 className="text-xl font-semibold mb-6">Philosophie de cette documentation</h2>
-            <p className="mb-6"><span className="font-semibold">Pragmatique avant tout :</span> Chaque concept est accompagné d&apos;exemples pratiques et de code fonctionnel.</p>
-            <p className="mb-6"><span className="font-semibold">Stack cohérente :</span> Tous les outils présentés fonctionnent parfaitement ensemble et sont activement maintenus.</p>
-            <p className="mb-12"><span className="font-semibold">Évolutive :</span> La documentation est mise à jour régulièrement pour suivre l&apos;écosystème.</p>
-            <h2 className="text-xl font-semibold mb-6">Comment utiliser ce guide</h2>
-            <ul className="list-disc list-inside">
-                <li className="list-decimal">Suivez l&apos;ordre des sections pour une approche progressive</li>
-                <li className="list-decimal">Consultez les exemples pratiques pour voir les concepts en action</li>
-                <li className="list-decimal">Utilisez la section Troubleshooting en cas de problème</li>
-                <li className="list-decimal">Référez-vous aux bonnes pratiques tout au long de votre développement</li>
-            </ul>
+            <DocsTitle title="Introduction" />
+            <DocsMb4 />
+            <DocsSubtitle subtitle="Bienvenue dans votre guide complet Next.js" />
+            <DocsMb6 />
+            <DocsParagraph paragraph="Cette documentation vous accompagnera dans la création d'applications Next.js modernes en suivant les meilleures pratiques actuelles. Vous apprendrez à construire des applications performantes, sécurisées et maintenables." />
+            <DocsMb12 />
+            <DocsSubtitle subtitle="Pourquoi ce guide ?" />
+            <DocsMb4 />
+            <DocsParagraph paragraph="Le développement web moderne évolue rapidement. Entre les nouvelles fonctionnalités de Next.js 14/15, l&apos;évolution de React, et l&apos;émergence d&apos;outils comme Better Auth et shadcn/ui, il peut être difficile de s&apos;y retrouver." />
+            <DocsMb6 />
+            <DocsParagraph paragraph="Ce guide vous propose :" />
+            <DocsMb6 />
+            <DocsList itemList={[
+                "Un parcours structuré du setup initial au déploiement",
+                "Les meilleures pratiques validées par la communauté",
+                "Des exemples concrets et des cas d'usage réels",
+                "Une stack moderne et éprouvée"
+            ]} />
+            <DocsMb12 />
+            <DocsSubtitle subtitle="À qui s&apos;adresse cette documentation ?" />
+            <DocsMb6 />
+            <DocsCaption caption="Développeurs débutants en Next.js :" />
+            <DocsMb4 />
+            <DocsList itemList={[
+                "Vous connaissez React mais découvrez Next.js",
+                "Vous voulez apprendre les bonnes pratiques dès le début",
+                "Vous cherchez une approche structurée"
+            ]} />
+            <DocsMb6 />
+            <DocsCaption caption="Développeurs intermédiaires :" />
+            <DocsMb4 />
+            <DocsList itemList={[
+                "Vous utilisez déjà Next.js mais voulez moderniser votre stack",
+                "Vous souhaitez découvrir Better Auth, shadcn/ui ou d'autres outils récents",
+                "Vous cherchez à optimiser vos applications existantes"
+            ]} />
+            <DocsMb12 />
+            <DocsSubtitle subtitle="Philosophie de cette documentation" />
+            <DocsMb6 />
+            <DocsParagraph paragraph="Pragmatique avant tout : Chaque concept est accompagné d&apos;exemples pratiques et de code fonctionnel." />
+            <DocsMb6 />
+            <DocsParagraph paragraph="Stack cohérente : Tous les outils présentés fonctionnent parfaitement ensemble et sont activement maintenus." />
+            <DocsMb6 />
+            <DocsParagraph paragraph="Évolutive : La documentation est mise à jour régulièrement pour suivre l&apos;écosystème." />
+            <DocsMb12 />
+            <DocsSubtitle subtitle="Comment utiliser ce guide" />
+            <DocsMb6 />
+            <DocsListNumber itemList={[
+                "Suivez l'ordre des sections pour une approche progressive",
+                "Consultez les exemples pratiques pour voir les concepts en action",
+                "Utilisez la section Troubleshooting en cas de problème",
+                "Référez-vous aux bonnes pratiques tout au long de votre développement"
+            ]} />
         </>
     );
 }

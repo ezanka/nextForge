@@ -46,13 +46,10 @@ export const sidebarItems = [
                 title: "Fondamentaux",
                 icon: Code,
                 items: [
-                    { title: "Introduction à Next.js", url: "/nextjs/introduction" },
-                    { title: "Installation et setup", url: "/nextjs/installation" },
-                    { title: "Structure du projet", url: "/nextjs/project-structure" },
-                    {
-                        title: "Configuration (next.config.js)",
-                        url: "/nextjs/configuration",
-                    },
+                    { title: "Introduction à Next.js", url: "/docs/nextjs/fondamentaux/introduction" },
+                    { title: "Installation et setup", url: "/docs/nextjs/fondamentaux/installation" },
+                    { title: "Structure du projet", url: "/docs/nextjs/fondamentaux/project-structure" },
+                    { title: "Configuration (next.config.js)", url: "/docs/nextjs/fondamentaux/configuration" },
                 ],
             },
             {
